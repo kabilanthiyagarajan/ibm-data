@@ -6,8 +6,8 @@
 
 The aim of our project is to develop an advanced machine learning-based system capable of detecting various cyber threats, such as DDoS attacks, by analyzing network traffic data in real-time. The system aims to improve accuracy and adaptability, addressing the limitations of traditional fixed-rule threat detection methods.
 
-## Algorithm:
-Procedure:
+## Procedure :
+
 1. Data Collection: Gather large datasets of network traffic logs that include normal activity and instances of various cyberattacks.
 2. Data Preprocessing: Clean and preprocess the data by handling missing values, removing duplicates, and applying feature encoding.
 3. Model Training: Use machine learning algorithms like Random Forest to train the model on labeled data. We use techniques like SMOTE to balance the data and improve detection of rare threats.
@@ -105,10 +105,6 @@ shap_values = explainer.shap_values(X_test_scaled)
 shap.summary_plot(shap_values, X_test_scaled, feature_names=X.columns.tolist())
 
 ~~~~
-## Output:
-
-
-
 
 ## Result:
 The system successfully detects multiple types of cyber threats, including DDoS attacks, with improved accuracy compared to traditional methods. The model demonstrates high accuracy and reliability through cross-validation and real-world data evaluation, offering an automated solution that adapts to evolving cyberattacks
